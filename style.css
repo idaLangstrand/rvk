@@ -4,12 +4,21 @@ body {
     padding: 0;
     line-height: 1.6;
 }
+
 header {
     background: #f4a261;
     color: #fff;
-    padding: 1rem 0;
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
+
+/* Make video full width and responsive */
+header video {
+    width: 100%;
+    height: auto;
+}
+
 footer {
     background: #264653;
     color: #fff;
@@ -19,6 +28,7 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
 main {
     padding: 2rem;
 }
