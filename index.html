@@ -10,8 +10,8 @@
     <header>
         <img src="https://firebasestorage.googleapis.com/v0/b/listner-f68e0.appspot.com/o/userPhotos%2FRana%20volleyball2.png?alt=media&token=6e3a8d74-1820-4539-9c35-05b15b41995e" alt="Club Icon" class="club-icon">
         <h1>Rana Volleyball Klubb</h1
-         <video autoplay loop muted>
-            <source src="https://idaLangstrand.github.iorvk/media/volleyballFilm.mp4" type="video/mp4">
+         <video id="videoPlayer" autoplay muted width="100%">
+            <source src="https://videos.pexels.com/video-files/6217182/6217182-hd_1920_1080_30fps.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </header>
@@ -24,6 +24,22 @@
         <h3>Kontakt Info</h3>
         <p>ida.langstrand@gmail.com</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js">
+        const videoPlayer = document.getElementById('videoPlayer');
+        const videos = [
+            "https://videos.pexels.com/video-files/6217182/6217182-hd_1920_1080_30fps.mp4",
+            "https://videos.pexels.com/video-files/6216955/6216955-hd_1920_1080_30fps.mp4",
+            "https://videos.pexels.com/video-files/6217063/6217063-hd_1920_1080_30fps.mp4"
+        ];
+
+        let currentVideo = 0;
+
+        videoPlayer.addEventListener('ended', () => {
+        // Move to the next video
+        currentVideo = (currentVideo + 1) % videos.length; // Loops back to the first video
+        videoPlayer.src = videos[currentVideo];
+        videoPlayer.play();
+        });
+    </script>
 </body>
 </html>
