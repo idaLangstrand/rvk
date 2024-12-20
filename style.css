@@ -12,7 +12,6 @@ header {
     text-align: center;
     position: relative;
     overflow: hidden;
-    float: left;
 }
 
 /* Make video full width and responsive */
