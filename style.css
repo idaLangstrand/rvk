@@ -37,7 +37,9 @@ main {
     /* Optional: To avoid the main content appearing underneath the fixed footer */
     padding-bottom: 60px; /* Ensure the main content doesn't get covered */
 }
-club-icon {
-    width: 100px;
-    height: auto;
+/* Image (icon) styling */
+.club-icon {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Maintain proportion */
+    object-fit: cover; /* Ensures the icon looks good if it’s not square */
 }
