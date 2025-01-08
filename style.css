@@ -40,7 +40,7 @@ main {
             position: fixed;
             top: 0;
             left: 0;
-            width: 100%;
+            width: 90%;
             height: 80%;
             object-fit: cover; /* Ensures the video scales properly */
             z-index: -1; /* Puts the video behind other content */
