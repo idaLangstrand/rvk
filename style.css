@@ -4,7 +4,8 @@ body {
     padding: 0;
     line-height: 1.6;
     padding-bottom: 60px; /* Add padding to prevent footer from overlaying content */
-    background: linear-gradient(to bottom, #e6f7ff, #f0f0f0, #ffffff);
+    background: linear-gradient(to bottom right, #e6f7ff, #f0f0f0, #ffffff);
+    z-index: -2;
 }
 
 header {
