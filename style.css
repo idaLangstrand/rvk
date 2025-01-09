@@ -39,8 +39,11 @@ header {
 main {
     padding: 2rem;
     background: #ffffff;
-    margin: 0 auto;
-    max-width: 1000px;
+    float: right; /* Keeps the image to the right of the text */
+    margin-top: 20px; /* Adjusts the vertical positioning */
+    margin-left: 20px; /* Adds space between the image and text */
+    max-width: 300px; /* Sets a max width for the image */
+    height: auto; /* Maintains aspect ratio */
 }
 
 .content-wrapper {
