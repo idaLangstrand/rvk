@@ -1,49 +1,52 @@
+/* General Body Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    padding-bottom: 60px; /* Add padding to prevent footer from overlaying content */
-    background: linear-gradient(to bottom right, #e6f7ff, #f0f0f0, #ffffff);
-    z-index: -2;
+    background: #f0f0f0;
+    overflow-x: hidden; /* Prevent horizontal scroll from background video */
 }
 
-header {
-    background: #f4a261;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-/* Make video full width and responsive */
-header video {
+/* Background Video Styling */
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover; /* Ensures the video scales properly */
+    z-index: -1; /* Places the video behind all content */
 }
 
-footer {
-    background: #264653;
-    color: #fff;
+/* Header Styling */
+header {
+    background: rgba(244, 162, 97, 0.8); /* Semi-transparent background */
+    color: white;
     text-align: center;
     padding: 1rem 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    left: 0;
+    position: relative;
+    z-index: 1; /* Ensures the header is above the video */
 }
 
+/* Main Content Styling */
 main {
     padding: 2rem;
-    /* Optional: To avoid the main content appearing underneath the fixed footer */
-    padding-bottom: 60px; /* Ensure the main content doesn't get covered */
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for readability */
+    margin: 2rem auto;
+    width: 90%; /* Adjust width for responsiveness */
+    max-width: 800px; /* Limit maximum width */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+    z-index: 1; /* Ensures main content is above the video */
 }
-.background-video {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: auto;
-            object-fit: cover; /* Ensures the video scales properly */
-            z-index: -1; /* Puts the video behind other content */
-        }
+
+/* Footer Styling */
+footer {
+    background: #264653;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    z-index: 1; /* Ensures footer is above the video */
+}
