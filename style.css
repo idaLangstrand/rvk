@@ -60,8 +60,6 @@ main {
 .image-content img {
     max-width: 100%; /* Make the image responsive */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Optional: Add rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for visual effect */
 }
 
 /* Adjust text alignment */
