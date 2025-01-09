@@ -57,7 +57,7 @@ main {
     flex: 1; /* Image takes up 1/3 of the space */
 }
 
-.image-content img {
+.image-content href {
     max-width: 100%; /* Make the image responsive */
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px; /* Optional: Add rounded corners */
