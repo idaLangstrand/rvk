@@ -25,16 +25,14 @@ body {
 
 /* Header Styling */
 header {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    background: #f4a261; /* Original header color */
     color: white;
     text-align: center;
-    background: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent background for readability */
-    padding: 1rem 2rem;
-    border-radius: 8px;
-    z-index: 1;
+    padding: 1rem 0;
+    width: 100%;
+    position: relative;
+    z-index: 1; /* Ensures the header is on top of the video */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds subtle shadow for better contrast */
 }
 
 /* Main Content Styling */
@@ -52,4 +50,9 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem 0;
+}
+
+/* Ensure a smooth transition from video to content */
+main, footer {
+    z-index: 0; /* Keep below the header */
 }
