@@ -72,7 +72,9 @@ main {
 .text-content p {
     text-align: left;
 }
-
+h2 {
+margin-top: 20px;
+}
 /* Footer Styling */
 footer {
     background: #a6a6a6;
