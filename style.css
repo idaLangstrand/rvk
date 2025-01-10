@@ -82,7 +82,9 @@ footer {
     background: #a6a6a6;
     color: white;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1rem;
+    padding-right: 10rem;
+    padding-left: 10rem;
 }
 
 /* Ensure a smooth transition from video to content */
