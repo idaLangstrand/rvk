@@ -88,3 +88,7 @@ footer {
 main, footer {
     z-index: 0; /* Keep below the header */
 }
+.tipping {
+    width: 30px;
+    height: auto;
+}
