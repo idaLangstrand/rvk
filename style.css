@@ -92,3 +92,6 @@ main, footer {
     width: 30px;
     height: auto;
 }
+.footer-content p {
+    text-align: center;
+}
