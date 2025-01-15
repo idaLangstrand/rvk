@@ -95,7 +95,8 @@ main, footer {
 .footer-content p {
     text-align: center;
 }
-button {
+.grasrot {
     border: 0px;
     background: #227268;
+    text-color: #ffffff;
 }
