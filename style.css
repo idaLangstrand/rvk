@@ -95,3 +95,7 @@ main, footer {
 .footer-content p {
     text-align: center;
 }
+.supportImg {
+    width: 200px;
+    height: auto;
+}
