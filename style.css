@@ -96,6 +96,6 @@ main, footer {
     text-align: center;
 }
 .supportImg {
-    width: 200px;
-    height: auto;
+    width: auto;
+    height: 100px;
 }
