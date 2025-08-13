@@ -173,7 +173,7 @@ body > main {
 
 /* ---------- FOOTER ---------- */
 footer {
-  background: #000;
+  background: #303030;
   color: white;
   text-align: center;
   padding: 20px 15px;
@@ -203,6 +203,7 @@ footer .small {
     height: 70vh;
   }
 }
+
 
 
 
