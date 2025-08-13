@@ -1,102 +1,175 @@
-/* General Body Styling */
+/* ---------- GLOBAL ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
+  font-family: 'Raleway', sans-serif;
+  background-color: #f5f6fa;
+  color: #222;
+  line-height: 1.6;
 }
 
-/* Video Section Styling */
-.video-section {
-    position: relative;
-    height: 100vh; /* Full viewport height */
-    overflow: hidden;
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 
-.background-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 99%;
-    height: 99%;
-    object-fit: cover; /* Ensures the video scales properly */
-    z-index: -1; /* Places the video behind the header */
+a {
+  text-decoration: none;
+  color: #ffcc00;
 }
 
-/* Header Styling */
-header {
-    background: #227268; /* Original header color */
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    width: 100%;
-    position: relative;
-    z-index: 1; /* Ensures the header is on top of the video */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds subtle shadow for better contrast */
+img {
+  max-width: 100%;
+  display: block;
 }
 
-/* Main Content Styling */
-main {
-    padding: 2rem;
-    background: #ffffff;
-    margin: 0 auto;
-    max-width: 1000px;
-}
-.main-image {
-    float: center; /* Keeps the image to the right of the text */
-    margin-top: 20px; /* Adjusts the vertical positioning */
-    margin-left: 0px; /* Adds space between the image and text */
-    max-width: 300px; /* Sets a max width for the image */
-    height: auto; /* Maintains aspect ratio */
-    padding-left:20px;
-}
-.content-wrapper {
-    display: flex;
-    align-items: flex-start; /* Align text and image at the top */
-    gap: 2rem; /* Space between text and image */
+/* ---------- HEADER ---------- */
+.site-header {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
 }
 
-.text-content {
-    flex: 2; /* Text takes up 2/3 of the space */
+.site-header video {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-
-.image-content img {
-    width: 200px;
-    height: auto; /* Maintain aspect ratio */
+.site-header .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 20, 40, 0.6);
 }
 
-/* Adjust text alignment */
-.text-content p {
-    text-align: left;
+.header-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  padding: 0 15px;
 }
-h2 {
-margin-top: 20px;
-padding-top: 40px;
+
+.header-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
-/* Footer Styling */
+
+.header-content p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* ---------- MAIN ---------- */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px 15px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+  color: #001428;
+  margin-bottom: 15px;
+  border-left: 5px solid #ffcc00;
+  padding-left: 10px;
+}
+
+.card h3 {
+  margin-top: 10px;
+  color: #003366;
+}
+
+.main-logo {
+  max-width: 180px;
+  margin: 10px auto;
+  display: block;
+}
+
+/* ---------- CLASSES ---------- */
+.class-list > div {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.class-list h3 {
+  margin-bottom: 5px;
+}
+
+/* ---------- SPONSORS ---------- */
+.sponsor-logos {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sponsor-logos img {
+  height: 60px;
+  object-fit: contain;
+}
+
+/* ---------- BUTTONS ---------- */
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #ffcc00;
+  color: #001428;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: 0.3s ease;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #e6b800;
+}
+
+/* ---------- FOOTER ---------- */
 footer {
-    background: #a6a6a6;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    padding-right: 5rem;
-    padding-left: 5rem;
+  background: #001428;
+  color: white;
+  text-align: center;
+  padding: 20px 15px;
 }
 
-/* Ensure a smooth transition from video to content */
-main, footer {
-    z-index: 0; /* Keep below the header */
+footer a {
+  color: #ffcc00;
 }
-.tipping {
-    width: 30px;
-    height: auto;
+
+footer .small {
+  font-size: 0.85rem;
+  margin-top: 10px;
+  opacity: 0.8;
 }
-.footer-content p {
-    text-align: center;
-}
-.supportImg {
-    width: auto;
-    height: 100px;
-    margin: 20px;
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .header-content h1 {
+    font-size: 2rem;
+  }
+
+  .site-header {
+    height: 70vh;
+  }
 }
