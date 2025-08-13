@@ -7,6 +7,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@300;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".text-content");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
+</script>
 <body>
 
   <!-- HEADER -->
@@ -72,6 +90,7 @@
 
 </body>
 </html>
+
 
 
 
