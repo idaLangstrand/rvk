@@ -101,7 +101,7 @@ a.spond-btn:hover, .grasrot:hover {
 
 /* Footer */
 footer {
-    background: #333;
+    background: #3f524b;
     color: white;
     padding: 20px;
     text-align: center;
@@ -128,3 +128,4 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
